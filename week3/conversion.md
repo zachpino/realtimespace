@@ -28,6 +28,10 @@ It is a weird Bash command, which specifies an output file *before* its input fi
 
 This limits our map to only include features tagged with a `subregion` of `Central Asia`.
 
+The final step in converting files is to take our geoJSON file, a very precise file format used mostly in GPS applications, and convert a less precise file for web usage.
+
+```topojson -o sovereign.topo.json sovereign.json```
+
 
 
 
