@@ -10,7 +10,9 @@ It is easy to convert the shapefile into a human readable format.
 
 ```shp2json ne_50m_admin_0_sovereignty.shp -o sovereign.json```
 
-The `-o` option specifies the output file.
+The `-o` option allows us to specify the location and name of the output file.
 
+After a short delay, the Terminal will return a prompt. 
 
+```cat sovereign.json```
 
