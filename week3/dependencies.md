@@ -20,4 +20,4 @@ In order to work on cartography files, some software prerequisites need to be in
     
 All of this software will come in handy in converting shapefiles, large collections of precise polygons of geographic features encoded as binary data for use with GIS tools, to human-readable json files. The tools also facilitate the manipulation of shapefiles, allowing use to combine other data with the geographic vectors.
 
-First, we need to [collect some resources](resources,md).
+First, we need to [collect some resources](resources.md).
