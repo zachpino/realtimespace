@@ -36,4 +36,6 @@ Please move the `refugee.csv` downloaded file inside of the `ne_50m_admin_0_sove
 ####Code for Visualization
 This code will come from D3's excellent geospatial code library. We will use code similar to this [example](http://bl.ocks.org/rveciana/a2a1c21ca1c71cd3ec116cc911e5fce9) by Mike Bostock, the author of D3.
 
+-----
+
 With all of these three pieces in place, we can move onto running the [complex data conversions](conversion.md) necessary to combine and render this data.
