@@ -10,9 +10,18 @@ It is easy to convert the shapefile into a human readable format.
 
 ```shp2json ne_50m_admin_0_sovereignty.shp -o sovereign.json```
 
-The `-o` option allows us to specify the location and name of the output file.
+The `-o` option allows us to specify the location and name of the output file. The -n option places each *feature*, a geographical entity, on a new line.
 
 After a short delay, the Terminal will return a prompt. 
 
-```cat sovereign.json```
+You can view the complex results with the following line in your Terminal.
+
+```less sovereign.json```
+
+`less` previews a small chunk of the output file.
+
+We could have used `ogr2ogr`, a component of the GDAL library, to cut down on the contents of our features.
+
+```ogr2ogr -f GeoJSON -where "subregion IN ('South Asia')" southasia.json ne_110m_admin_0_sovereignty.shp```
+
 
