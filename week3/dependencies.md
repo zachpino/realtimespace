@@ -12,4 +12,6 @@
     - ```npm install -g topojson```
 - Install Newline-Delimited Json Tools
     - ```npm install -g ndjson-cli```
+    
+    
 All of this software will come in handy in converting shapefiles, large collections of precise polygons of geographic features encoded as binary data for use with GIS tools, to human-readable json files. The tools also facilitate the manipulation of shapefiles, allowing use to combine other data with the geographic vectors.
