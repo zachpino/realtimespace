@@ -10,7 +10,7 @@ It is easy to convert the shapefile into a human readable format.
 
 ```shp2json ne_50m_admin_0_sovereignty.shp -o sovereign.json```
 
-The `-o` option allows us to specify the location and name of the output file. The -n option places each *feature*, a geographical entity, on a new line.
+The `-o` option allows us to specify the location and name of the output file.
 
 After a short delay, the Terminal will return a prompt. 
 
@@ -30,7 +30,9 @@ This limits our map to only include features tagged with a `subregion` of `Centr
 
 The final step in converting files is to take our geoJSON file, a very precise file format used mostly in GPS applications, and convert a less precise file for web usage.
 
-```topojson -o sovereign.topo.json sovereign.json```
+```geo2topo -o sovereign.topo.json sovereign.json```
+
+`geo2topo` allows us to create accurate, though much smaller, geographic files.
 
 
 
