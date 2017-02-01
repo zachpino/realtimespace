@@ -18,10 +18,16 @@ You can view the complex results with the following line in your Terminal.
 
 ```less sovereign.json```
 
-`less` previews a small chunk of the output file.
+`less` previews a small chunk of the output file. Note the different parameters that each feature contains, for instance `subregion` geopolitical sub-region and `pop_est` estimated population.
 
-We could have used `ogr2ogr`, a component of the GDAL library, to cut down on the contents of our features.
+We could have used `ogr2ogr`, a component of the GDAL library, to cut down on the contents of our features and convert as well, though `shp2json` is more efficient.
 
-```ogr2ogr -f GeoJSON -where "subregion IN ('South Asia')" southasia.json ne_110m_admin_0_sovereignty.shp```
+```ogr2ogr -f GeoJSON -where "subregion IN ('Central Asia')" centralasia.json ne_50m_admin_0_sovereignty.shp```
+
+It is a weird Bash command, which specifies an output file *before* its input file.
+
+This limits our map to only include features tagged with a `subregion` of `Central Asia`.
+
+
 
 
