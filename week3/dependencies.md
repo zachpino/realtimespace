@@ -1,10 +1,13 @@
-In order to work on cartography files, some software prerequisites need to be installed. This document will assume users are running macOS.
+`In order to work on cartography files, some software prerequisites need to be installed. This document will assume users are running macOS.
 
 - Install [Homebrew](http://brew.sh)
 - Install [Node and NPM](https://nodejs.org/en/) in its most recent LTS release
 - Install shp2json with the following line in your terminal.
+
 ```sudo npm install -g shapefile ```
+
 - Install d3 geography tools with the following line in your terminal.
+
 ```sudo npm install -g d3-geo-projection```
 - Install geographics data abstraction library with the following line in your terminal..
 ```brew install gdal```
