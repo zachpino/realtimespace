@@ -2,4 +2,5 @@ In order to work on cartography files, some software prerequisites need to be in
 
 - Install [Homebrew](http://brew.sh)
 - Install [Node and NPM](https://nodejs.org/en/) in its most recent LTS release
-
+- Install shp2json with the following line in your terminal.
+    - ```npm install -g shapefile ```
