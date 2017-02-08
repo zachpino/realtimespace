@@ -47,4 +47,4 @@ The teams *do not necessarily need to work on a single result*. But, the teammat
 
 -----
 
-These will be the *supported* data sources. If another dataset would be useful to your project, you are encouraged to explore and implement it! But, given the limited numbers of hours in a day, Tomoko and Zach can only provide assistance across these cited topics and datasets.
+These will be the *supported* data sources. If another dataset would be useful to your project, you are encouraged to explore and implement it! But, given the limited number of hours in a day, Tomoko and Zach can only provide assistance across these cited topics and datasets.
