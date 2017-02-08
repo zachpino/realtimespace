@@ -8,7 +8,7 @@ In addition, with the techniques covered this and last week, seek out shapefiles
 
 Tomoko and Zach have made some decisions regarding student projects going forward. As we have expressed since the beginning of the course, we need to winnow the class projects down to a more managable number to ensure each project is adequately supported. We have decided that the following projects are adequately bolstered by appropriate data resources, and are feasibly scoped to the semester timeline.
 
-The teams *do not necessarily need to work on a single result*. But, the teammates should be working together to source and coerce data into a format and codebase that both designers can implement. Please use teamwork to accelerate the research and hypothetical phases of the design process, and for peer review, coding help, and sanity-checks throughout the semester. 
+The teams *do not need to work on a single visualization*, and can work towards independent resolutions. But, the teammates should be working together to source and coerce data into a format and codebase that both designers can implement. Please use teamwork to accelerate the research and hypothetical phases of the design process, and for peer review, coding help, and sanity-checks throughout the semester. 
 
 -----
 
