@@ -1,7 +1,7 @@
 ###Shapefile Conversion
 -----
 
-Now, with shapefile vectors in hand from the Census, we can begin the task of producing our visualization. Let's first make the file easier to understand by making it human-readable.
+Now, with [shapefile vectors in hand](shapefiles.md) from the Census, we can begin the task of producing our visualization. Let's first make the file easier to understand by making it human-readable.
 
 ```
 shp2json cb_2015_17_tract_500k.shp -o il.json
@@ -21,13 +21,13 @@ We can now manipulate this file with some simple projection math so that Illinoi
 geoproject 'd3.geoConicEqualArea().rotate([90,-35]).fitSize([960,960],d)' < il.json > il-cea.json'
 ```
 
-There are several new things in this line. This is the first line of Javascript we've covered. The `geoproject` command takes as input a javascript phrase, accessing the [d3 projection library](https://github.com/d3/d3-geo/blob/master/README.md#projections) directly.  Here, we are tapping the Conic-Equal-Area projection which does not distort the area of enclosed geography. This makes it ideal for visualizations where areas are meaningful, like chloropleths. Alternatives would be fine here, and consulting the [State Plane](https://github.com/veltman/d3-stateplane) guidelines, the preferred projection by each state government, is also advisable.
+There are several new things in this line. This is the first line of Javascript we've covered. The `geoproject` command takes as input a javascript phrase, accessing the [d3 projection library](https://github.com/d3/d3-geo/blob/master/README.md#projections) directly.  Here, we are tapping the Conic-Equal-Area projection which does not distort the area of enclosed geography. This makes it ideal for visualizations where areas are meaningful, such as choropleths. Alternatives would be fine here, and consulting the [State Plane](https://github.com/veltman/d3-stateplane) guidelines, the preferred projection by each state government, is also advisable.
 
-Projections have `rotate` methods that allow us to spin the globe and focus on a center point. Here, we are rotating the globe 90 degrees west away from the Prime Meridian, and 35 degrees towards the north pole to bring Illinois roughly into focus. You can see these numbers are meaningful -- Chicago's Longitude, Latitude coordinates are [41.8781° N, 87.6298° W]
+Projections have `rotate` methods that allow us to spin the globe and focus on a center point. Here, we are rotating the globe 90 degrees west away from the Prime Meridian, and 35 degrees towards the north pole to bring Illinois roughly into focus. You can see these numbers are meaningful -- Chicago's Longitude, Latitude coordinates are [41.8781° N, 87.6298° W], the inverse of our rotation.
 
 Finally, we are scaling our projection to fit in a 960 point square. 
 
-`geoproject` takes an input file with the `<` operator, and outputs a new file with the redirect `>` operator.
+`geoproject` takes an input file with the `<` operator, and outputs a new file with the redirect `>` operator. Many of the node commands we are running will use this standard.
 
 Let's get some usable vectors for design purposes!
 
@@ -35,4 +35,4 @@ Let's get some usable vectors for design purposes!
 geo2svg -w 960 -h 960 < il-cea.json > il-cea.svg
 ```
 
-Let's now make this visualization [present some data](data-source)!
+Let's now make this visualization [present some data](data-source).
