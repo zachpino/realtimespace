@@ -35,4 +35,4 @@ Let's get some usable vectors for design purposes!
 geo2svg -w 960 -h 960 < il-cea.json > il-cea.svg
 ```
 
-Let's now make this visualization [present some data](data-source).
+Let's now make this visualization [present some data](data-source.md).
