@@ -2,7 +2,7 @@
 
 -----
 
-Population is kind of boring to visualize, given that census tracts are by design aimed at including around 4,000 citizens. Instead, let's make use of the `ALAND` property, the land area in meters, included in our shapefile.
+Simple population will be uninteresting to visualize with a choropleth, given that census tracts are -- by design -- aimed at including a maximum of 4,000 citizens. Instead, let's use the population data and the land area in meters of each census tract to derive population density. Land area of each tract is included in our shapefile, in the `ALAND` property.
 
 ```
 ndjson-map 'd[0].properties = {density: Math.floor(d[1].Population / d[0].properties.ALAND * 2589975.2356)}, d[0]' < il-joined.ndjson > il-density.ndjson
