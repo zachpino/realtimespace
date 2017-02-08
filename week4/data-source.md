@@ -1,7 +1,7 @@
 ### Sourcing Data
 -----
 
-With a census API key, we can pull down data to embed in our census tract vectors. This example will use census tract population.
+With a census API key, we can pull down data to embed in our [prepared census tract vectors](conversion.md). This example will use census tract population data to derive population density.
 
 The [Census API documentation](http://www.census.gov/data/developers/data-sets/acs-5year.html), like most APIs, is challenging at first glance. Always look first at any examples provided. The page gives this example call for a structured request of the census datastore.
 
@@ -21,15 +21,15 @@ The `get=...` section of this request identifies what data we are seeking. The `
 
 `&key=...` is indicating that we will need a Census key to access the files.
 
-More examples are [here](http://api.census.gov/data/2015/acs5/examples.html). Try to disentangle them for practice!
+More examples are [here](http://api.census.gov/data/2015/acs5/examples.html). Try to disentangle them for practice.
 
-We can access the data that we want as follows. Make sure you copy and paste your census key.
+We can access the data that we want as follows. Make sure you copy and paste in your census key.
 
 ```
-curl 'http://api.census.gov/data/2015/acs5?get=B01003_001E&for=tract:*&in=state:17&key=[YOUR PERSONAL CENSUS KEY]' -o il_2015_tract.json
+curl 'http://api.census.gov/data/2015/acs5?get=B01003_001E&for=tract:*&in=state:17&key=[YOUR PERSONAL CENSUS KEY]' -o il-tract-pop.json
 ```
 
-The additional `in:state:17` logic was pulled from one of the additional examples linked above. Again, note the FIPS code for Illinois.
+The `in:state:17` logic was pulled from one of the additional examples linked above. Again, note the FIPS code for Illinois.
 
 We now have a dataset that looks like this, pulled from the census API.
 
@@ -71,4 +71,4 @@ We have, in columns from left to right for each tract in Illinois...
 - FIPS Internal-to-Illinois County Code
 - Tract Identifier
 
-Now, we can merge this data with our shapefiles to produce our visualization.
+Now, we can [merge this data](data-wrangling.md) with our shapefiles to produce our visualization.
