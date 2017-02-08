@@ -26,7 +26,7 @@ Let's see it!
 geo2svg -n --stroke none -p 1 -w 960 -h 960 < il-color.ndjson > il-color.svg
 ```
 
-![sequential](http://www.zachpino.com/d3/il-color.svg)
+![sequential](http://www.zachpino.com/d3/il-color-reg.svg)
 
 And, we have a visualization!
 
@@ -42,6 +42,6 @@ Note that we also took the square root of 4000 (~64) in the `domain` definition.
 geo2svg -n --stroke none -p 1 -w 960 -h 960 < il-color-sqrt.ndjson > il-color-sqrt.svg
 ```
 
-![sqrt](http://www.zachpino.com/d3/il-color-reg.svg)
+![sqrt](http://www.zachpino.com/d3/il-color.svg)
 
 After all that data manipulation, we have the visualization we were looking for.
