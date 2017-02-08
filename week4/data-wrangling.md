@@ -6,10 +6,10 @@ Often, the hardest part of producing the joined, uniform, and clean files necess
 
 We have two files to combine.
 
-- `il_2015_tract.json` holding population data per census tract
+- `il-tract-pop.json` holding population data per census tract
 - `il-cea.json` containing physical outlines of the census tracts
 
-The geoJSON file that currently holds our geographic vectors `il-cea.json` is exactly one line long. Of course, that one line is 5.4MB long! It would be nice if, for each `Feature` representing each census tract, we had a single line. This would allow us to better understand the contents of the file and iterate through it more easily.
+The geoJSON file that currently holds our geographic vectors `il-cea.json` is exactly one line. Surprisingly, that one line is 5.4MB long! It would be nice if, for each `Feature` representing each census tract, we had a single line. This would allow us to better understand the contents of the file and iterate through it more easily.
 
 A recent development in data manipulation tools, Newline-Delimmited JSON or ndJSON, does just that.
 
@@ -28,7 +28,7 @@ A single `Feature` now looks like this.
 
 Note towards the beginning, there are called-out properties for `STATEFP` and `COUNTYFP` or State and County FIPS Identifier, and `TRACTCE` for the Census Tract Encoding Identifier. Those three numbers, joined together in sequence, make up the `GEOID` property.
 
-Similarly, in the head of the `il_2015_tract.json` population file, we have the same properties.
+Similarly, in the head of the `il-tract-pop.json` population file, we have the same properties.
 
 ```
 [["B01003_001E","state","county","tract"],
@@ -36,7 +36,7 @@ Similarly, in the head of the `il_2015_tract.json` population file, we have the 
 ...
 ```
 
-This means that the datasets can be combined! We will use the `TRACTCE` property of `il-cea.ndjson` and the `tract` property of `il_2015_tract.json` to knit these files together.
+This means that the datasets can be combined! We will use the `TRACTCE` property of `il-cea.ndjson` and the `tract` property of `il-tract-pop.json` to knit these files together.
 
 Let's *elevate* the `TRACTCE` property of `il-cea.ndjson` to each element's id.
 
@@ -54,7 +54,7 @@ Note, at the very end of this object, we have the id assigned.
 Now, we need to convert the simple array notation of `il_2015_tract.json` into proper json for matching purposes.
 
 ```
-ndjson-cat il_2015_tract.json > il_2015_tract_flat.json
+ndjson-cat il-tract-pop.json > il-tract-pop-flat.json
 ```
 
 This line removes all line breaks in the file and flattens out hierarchies. Useful for making sure unintentional whitespace doesn't get in the way of the following steps. Look at the file, it's one line long!
@@ -62,13 +62,13 @@ This line removes all line breaks in the file and flattens out hierarchies. Usef
 Let's now resplit the file into newlines as we did with our geographic features previously.
 
 ```
-ndjson-split 'd.slice(1)' < il_2015_tract_flat.json > il_2015_tract_expanded.ndjson
+ndjson-split 'd.slice(1)' < il-tract-pop-flat.json > il-tract-pop.ndjson
 ```
 
 We now have an ndJSON file, let's do some simple manipulation to prepare this file for merging. This line will format the resulting ndJSON objects with ids and population properties.
 
 ```
-ndjson-map '{id: d[3], Population: d[0]}' < il_2015_tract_expanded.ndjson > il_2015_tract_withID.ndjson
+ndjson-map '{id: d[3], Population: d[0]}' < il-tract-pop.ndjson > il-tract-pop-id.ndjson
 ```
 
 And we have our goal!
@@ -87,7 +87,7 @@ And we have our goal!
 And finally, to merge.
 
 ```
-ndjson-join 'd.id'  il-cea-id.ndjson  il_2015_tract_withID.ndjson > il_joined.ndjson
+ndjson-join 'd.id'  il-cea-id.ndjson  il-tract-pop-id.ndjson > il-joined.ndjson
 ```
 
 And we have our result! Note the matched `Population` property at the end of the object.
@@ -97,3 +97,4 @@ And we have our result! Note the matched `Population` property at the end of the
 ...
 ```
 
+With this file, we can finally produce a [meaningful visualization](visualization.md).
