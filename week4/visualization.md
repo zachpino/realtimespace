@@ -47,3 +47,5 @@ geo2svg -n --stroke none -p 1 -w 960 -h 960 < il-color-sqrt.ndjson > il-color-sq
 ![sqrt](http://www.zachpino.com/d3/il-color.svg)
 
 After all that data manipulation, we have the visualization we were looking for.
+
+Now, [practice these steps in your homework](nextsteps.md).
