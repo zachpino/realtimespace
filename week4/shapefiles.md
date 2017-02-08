@@ -31,3 +31,5 @@ unzip cb_2015_17_tract_500k.zip
 ```
 
 Visit [mapshaper](http://www.mapshaper.org) and drop in the revealed .shp file to see the results!
+
+With the shapefile in hand, let's move on to [converting it](conversion.md) into a more usable format.
