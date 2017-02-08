@@ -26,7 +26,7 @@ From your computer's terminal (importantly not your server, as the programs we a
 cd ~/Desktop/
 mkdir illinois
 cd illinois/
-curl 'http://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_17_tract_500k.zip`
+curl 'http://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_17_tract_500k.zip'
 unzip cb_2015_17_tract_500k.zip
 ```
 
