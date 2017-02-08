@@ -26,6 +26,8 @@ Let's see it!
 geo2svg -n --stroke none -p 1 -w 960 -h 960 < il-color.ndjson > il-color.svg
 ```
 
+![sequential](http://www.zachpino.com/d3/il-color.svg)
+
 And, we have a visualization!
 
 For slightly better results when confronted with a polarized dataset (we have lots of very high densities, and lots of very low densities in Illinois), we can take the square root of each value.
@@ -39,5 +41,7 @@ Note that we also took the square root of 4000 (~64) in the `domain` definition.
 ```
 geo2svg -n --stroke none -p 1 -w 960 -h 960 < il-color-sqrt.ndjson > il-color-sqrt.svg
 ```
+
+![sqrt](http://www.zachpino.com/d3/il-color-reg.svg)
 
 After all that data manipulation, we have the visualization we were looking for.
