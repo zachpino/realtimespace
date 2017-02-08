@@ -8,6 +8,9 @@ In order to work on cartography files, some software prerequisites need to be in
 - Install [Node and NPM](https://nodejs.org/en/) in its most recent LTS release
 - Install shp2json with the following line in your terminal.
     - ```sudo npm install -g shapefile ```
+- Install d3 with the following line in your terminal.
+    - ```sudo npm install -g d3```
+
 - Install d3 geography tools with the following line in your terminal.
     - ```sudo npm install -g d3-geo-projection```
 - Install geographics data abstraction library with the following line in your terminal.
