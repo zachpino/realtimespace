@@ -19,11 +19,11 @@ The `get=...` section of this request identifies what data we are seeking. The `
 
 `for=state:*` says that we are interested in data scoped to the state level, and that we want all (the * wildcard) of the states.
 
-`&key=...` is indicating that we will need 
+`&key=...` is indicating that we will need a Census key to access the files.
 
 More examples are [here](http://api.census.gov/data/2015/acs5/examples.html). Try to disentangle them for practice!
 
-We can access the data that we want as follows.
+We can access the data that we want as follows. Make sure you copy and paste your census key.
 
 ```
 curl 'http://api.census.gov/data/2015/acs5?get=B01003_001E&for=tract:*&in=state:17&key=[YOUR PERSONAL CENSUS KEY]' -o il_2015_tract.json
