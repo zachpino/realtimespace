@@ -5,7 +5,7 @@
 Population is kind of boring to visualize, given that census tracts are by design aimed at including around 4,000 citizens. Instead, let's make use of the `ALAND` property, the land area in meters, included in our shapefile.
 
 ```
-ndjson-map 'd[0].properties = {density: Math.floor(d[1].Population / d[0].properties.ALAND * 2589975.2356)}, d[0]' < il_joined.ndjson > il-density.ndjson
+ndjson-map 'd[0].properties = {density: Math.floor(d[1].Population / d[0].properties.ALAND * 2589975.2356)}, d[0]' < il-joined.ndjson > il-density.ndjson
 ```
 
 Here, we are making a new property called `density` that is the result of simplifying (via `Math.floor` which rounds down) the population divided by the land area in meters. To better match American mental models when we look at the data, we can multiply our square meters by 1609.34^2, the number of square meters in a square mile -- and end up with a unit conversion coefficient of `2589975.2356`. After this bit of math, we have a data point for population density for each census tract.
