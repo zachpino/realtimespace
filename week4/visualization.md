@@ -2,6 +2,8 @@
 
 -----
 
+With our shapefile vector and population dataset [merged](data-wrangling.md), let's consider the choropleth itself.
+
 Simple population will be uninteresting to visualize with a choropleth, given that census tracts are -- by design -- aimed at including a maximum of 4,000 citizens. Instead, let's use the population data and the land area in meters of each census tract to derive population density. Land area of each tract is included in our shapefile, in the `ALAND` property.
 
 ```
