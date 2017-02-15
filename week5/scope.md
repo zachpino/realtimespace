@@ -2,7 +2,7 @@
 
 -----
 
-A fundamental aspect of working with D3 is the idea *scales*, which use *domains* and *ranges* to manage visualization intent. 
+A fundamental aspect of working with D3 is the idea *scales*, which use *domains* and *ranges* to manage visualization intent. We will use these to work with the [megacity dataset](dataset.md).
 
 - A *domain* is the boundaries of our data. For instance, if our dataset comprised timestamps collected all day, our domain might be -12 to 12.
 - A *range* is the boundaries of our data's intended representation. If we wanted those timestamps to fit into a 100px graphic, our range would be 0 to 100.
@@ -57,4 +57,4 @@ console.log(x(90));
 
 In your web console, you should find the pixel mapping for a longitude of 90!
 
-Now, let's ask d3 to look at our data.
+Now, let's ask d3 to look at our data and make a simple [scatter plot visualization](scatter.md)!
