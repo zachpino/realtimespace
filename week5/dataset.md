@@ -156,3 +156,5 @@ Hong Kong,China,22.304980895,114.185009317,7419
 `CSV` files, comma-separated values, are a common representation format for multi-dimensional data. This particular file contains the latutude, longitude, and population for all of the world's megacities as defined by the World Bank. 
 
 Remember, Latitude is a North-South metric, and Longitude is East-West. Accordingly, Latitude ranges from -90 to 90 degrees, and Longitude ranges between -180 and 180 degrees.
+
+We can now use [d3 scales](scope.md) to derive visualization parameters from these numbers.
