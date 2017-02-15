@@ -39,4 +39,8 @@ Javascript is a *weakly-typed* programming language. We can make and use data wi
 
 Here, we are making two variables to store some important information -- how big we want our visualization to be in pixels in both dimensions.
 
-Afterwards, we are using those variables to create an `<svg>` element. SVG is a lightweight scripting language for drawing vector graphics that D3, web browsers, and Adobe Illustrator speak natively. Take a look at the [reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Element) to see what is possible.
+Afterwards, we are using those variables to create an `<svg>` element. SVG is a lightweight scripting language for drawing vector graphics that D3, web browsers, and Adobe Illustrator speak natively. Take a look at the [reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Element) to see what is possible. 
+
+If you save and run this code, you should see a blueish rectangle on your screen. Note that in D3, we can set *attributes* of an html tag with `.attr()` and CSS styles with `.css()`. 
+
+Now, let's manage our data!
