@@ -33,15 +33,28 @@ D3 uses domains and ranges to map our data to our screen's coordinates.
       .style("background-color","#cde")
       ;
       
+            
       // set the intended range
-      var x = d3.scaleLinear().range([0, width]);
-      var y = d3.scaleLinear().range([height, 0]);
-
-      // scale the domain of the data
-      x.domain([-180,180]);
-      y.domain([-90,90]);
-
+      var x = d3.scaleLinear().domain([-180,180]).range([0, width]);
+      var y = d3.scaleLinear().domain([-90,90]).range([height, 0]);
+      
     </script>
 </body>
 </html>
 ```
+
+We justr created 2 scales, one for x and one for y!
+
+We know that our data fits into -180 to 180 for longitude, and -90 to 90 for latitude. We want our visualization to fit into specific pixels on our website, from 0 to the `width` and `height` variables. 
+
+Take a look at the documentation for d3 scales, where you will also see all the [other kinds of scales](https://github.com/d3/d3-scale) available. 
+
+Let's use those scales. Add this line at the bottom of your script.
+
+```
+console.log(x(90));
+```
+
+In your web console, you should find the pixel mapping for a longitude of 90!
+
+Now, let's ask d3 to look at our data.
