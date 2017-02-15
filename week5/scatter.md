@@ -77,3 +77,5 @@ d3.csv("data.csv", function(error, data) {
 </script>
 </body>
 ```
+
+We added an svg circle for each datapoint, approximating an equirectangular projection.
