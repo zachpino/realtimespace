@@ -24,5 +24,5 @@ The new line here is the `<script>` tag. This is a link the [D3 data visualizati
 
 By placing this line in our code, we are effectively including all of that linked code in our page.
 
-Now, we can look at the data we plan to plot with this library!
+Now, we can look at the [data](dataset.md) we plan to plot with this library!
 
