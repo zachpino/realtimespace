@@ -2,7 +2,7 @@
 
 -----
 
-Please create a second file, this one called `data.csv`. 
+After [making an index.html](setup.md), please create a second file, this one called `data.csv`. 
 
 ```
 City,Country,Latitude,Longitude,2015Pop
