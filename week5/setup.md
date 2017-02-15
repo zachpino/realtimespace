@@ -1,6 +1,6 @@
 ###Starting Code
 
-Let's begin this introduction to javascript with the following recognizable code.
+Let's begin this introduction to javascript with the following recognizable code as an `index.html` file on our server
 
 ```
 <html>
