@@ -12,4 +12,4 @@ After weeks of discussion, let's finally create a realtime map!
 - [Query API](query.md)
 - [Draw Dots](draw.md)
 - [Update with Button](button.md)
-- [Update at Interval]
+- [Update at Interval](interval.md)
