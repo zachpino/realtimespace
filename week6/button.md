@@ -28,3 +28,5 @@ d3.select("#update").on("click", function(){
 
 This binds the click event of our button with `id` of `update` to a D3 expression, which redraws our map with more up-to-date data!
 
+But, manual updating is no good for realtime data, what about [automatic polling](interval.md)?
+
