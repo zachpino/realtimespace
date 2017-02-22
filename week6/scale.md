@@ -1,7 +1,7 @@
 ###Mapping Scales
 ---
 
-Let's setup some utility scales to convert the data's `lat` and `lon` coordinates to more useful pixel values based on the `width` and `height` variables. 
+Let's setup some utility scales to convert the data's `lat` and `lon` coordinates to more useful pixel values based on the `width` and `height` variables of our [svg container](svg.md). 
 
 We can also setup a scale to map our celsius temperatures to a *parameterized* 0 - 1 range. This is important for some color work we will do later, as sequential scales in D3 expect parameterized data.
 
