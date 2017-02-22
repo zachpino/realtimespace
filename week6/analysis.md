@@ -2,7 +2,7 @@
 
 ---
 
-There are many examples on the [Open Weather Map](data.md) [Realtime API](http://openweathermap.org/current) documentation page for accessing weather data in different ways.
+There are many examples on the [Open Weather Map](data.md) realtime API [documentation page]((http://openweathermap.org/current)) for accessing weather data in different ways.
 
 We will be querying the API for several cities based on their IDs, which can be referenced in this [index](http://bulk.openweathermap.org/sample/city.list.json.gz) (beware: it is a large download). Select a few cities to use in this exercise map and copy their IDs.
 
@@ -37,3 +37,5 @@ We will need to understand how this data is nested to get anywhere with our visu
 ```
 data.list.main.temp_max
 ```
+
+We can now begin [setting up the html of our page](structure.md) to hold our visualization.
