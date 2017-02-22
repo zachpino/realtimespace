@@ -9,8 +9,8 @@ After weeks of discussion, let's finally create a realtime map!
 - [Page Structure](structure.md)
 - [Setup SVG Container](svg.md)
 - [Scales](scale.md)
-- [Access API]
-- [Draw Dots]
+- [Query API](query.md)
+- [Draw Dots](draw.md)
 - [Wrap as Function]
 - [Update with Button]
 - [Update at Interval]
