@@ -11,6 +11,5 @@ After weeks of discussion, let's finally create a realtime map!
 - [Scales](scale.md)
 - [Query API](query.md)
 - [Draw Dots](draw.md)
-- [Wrap as Function]
-- [Update with Button]
+- [Update with Button](button.md)
 - [Update at Interval]
