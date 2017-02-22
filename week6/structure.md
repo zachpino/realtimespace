@@ -1,7 +1,7 @@
 ###Base Page Structure
 ---
 
-As always, our page needs to be valid html and inlude a reference to the D3 library. This can be done locally, or on your server.
+We have [our data](analysis.md). But, as always, our page needs to be valid html and inlude a reference to the D3 library. This can be done locally, or on your server.
 
 ```
 <html>
