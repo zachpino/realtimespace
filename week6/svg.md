@@ -2,7 +2,7 @@
 
 ---
 
-We can use D3 to find the `body` tag of the page, and insert an `<svg>` element to hold our visualization. Place this in the empty script tag in the body of the page.
+We can use D3 to find the `body` tag of the [base html page](structure.md), and insert an `<svg>` element to hold our visualization. Place this in the empty script tag in the body of the page.
 
 ```
 var width = 960;
