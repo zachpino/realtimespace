@@ -15,6 +15,6 @@ With [scale utility functions](scale.md) out of the way, let's get into the data
 
 Replace the `group` values with the cities you would like to map and paste in your API key.
 
-Check the console and evaluate if the data came through!
+Check the console and evaluate if the data came through! You should see a set of several Javascript objects ready for your use.
 
-You should see a set of several Javascript object ready for your use.
+Let's [draw some circles](draw.md) with that data.
