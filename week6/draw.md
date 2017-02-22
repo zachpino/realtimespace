@@ -1,7 +1,7 @@
 ###Drawing with Data
 ---
 
-Within your `d3.json` code block, add the following code to produce a circle for each city, colored by its temperature. You can use the same logic to do just about anything with this dataset and svg circles!
+Within your `d3.json` code block, which [queries our API source](query.md), add the following code to produce a circle for each city, colored by its temperature. You can use the same logic to do just about anything with this dataset and svg circles!
 
 ```
 				svg.selectAll(".dot")
