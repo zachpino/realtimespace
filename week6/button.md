@@ -1,8 +1,7 @@
 ###Updating Data with a Button
 ---
 
-Let's add a button the body of the page above the scripts.
-
+Let's add a button the body of the page above the scripts which [draw the circles](draw.md).
 ```
 	<button id="update">Update</button>
 ```
