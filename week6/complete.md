@@ -13,7 +13,7 @@ Don't forget to define your apikey!
 
 	<script>
 		var apikey = "######################";
-
+		var cities = "4887398,361058,6542286,993800,4140963,256637,3941584,5391959,1857910,1642911,2624652,6547294,1819730,4553433"
 		var width = 960;
 		var height = 600;
 
@@ -21,8 +21,6 @@ Don't forget to define your apikey!
 		var x = d3.scaleLinear().domain([-180,180]).range([0, width]);
 		var y = d3.scaleLinear().domain([-90,90]).range([height, 0]);
 		var tmp = d3.scaleLinear().domain([-20,40]).range([0,1]);
-
-
 
 		var svg = d3.select("body")
 		.append("svg")
@@ -43,6 +41,9 @@ Don't forget to define your apikey!
 
 				console.log(weather);
 
+
+		      		svg.selectAll(".dot").remove();
+		
 				svg.selectAll(".dot")
 				.data(weather.list)
 				.enter()
