@@ -2,7 +2,7 @@
 
 ---
 
-We have a map of cities, but no geography. This code is a bit advanced, walk through it one block at a time.
+We have a map of cities, but no geography. This code is a bit advanced, so walk through it one block at a time. You will need [a geojson file](world-110m.json) to draw.
 
 ```
 <!DOCTYPE html>
