@@ -42,7 +42,7 @@ Don't forget to define your apikey!
 				console.log(weather);
 
 
-		      		svg.selectAll(".dot").remove();
+		      	svg.selectAll(".dot").remove();
 		
 				svg.selectAll(".dot")
 				.data(weather.list)
