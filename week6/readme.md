@@ -14,3 +14,4 @@ After weeks of discussion, let's finally create a realtime map!
 - [Update with Button](button.md)
 - [Update at Interval](interval.md)
 - [Cache Control](cache.md)
+- [Adding Geography](geography.md)
