@@ -21,3 +21,5 @@ View the [complete code](complete.md) to see the fix which involves a line of co
 ```
 	svg.selectAll(".dot").remove();
 ```
+
+We may also want to prevent the page from [caching](cache.md), as in some common scenarios our script may fail to grab new data.
