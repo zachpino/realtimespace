@@ -29,7 +29,7 @@ We have a map of cities, but no geography. This code is a bit advanced, walk thr
 		var width = 1400;
 		var height = 700;
 		var cities = "4887398,361058,108410,6542286,146268,993800,4140963,256637,3941584,5391959,1857910,1642911,2624652,6547294,1819730,4553433,344979,3652462,1512569,1850147";
-		var apikey = "2166f8d720eac7933e445a19f97cf00a";
+		var apikey = "#######################";
 
 
 		// set the domain and ranges for latitude and longitude
