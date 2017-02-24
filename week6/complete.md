@@ -33,7 +33,7 @@ Don't forget to define your apikey!
 			5000);
 
 		function updateMap(){
-			d3.json('http://api.openweathermap.org/data/2.5/group?id=" + cities + "&units=metric&APPID=' + apikey, function(error, weather) {
+			d3.json('http://api.openweathermap.org/data/2.5/group?id=' + cities + '&units=metric&APPID=' + apikey, function(error, weather) {
 				if (error) throw error;
 
 				console.log(weather);
