@@ -57,7 +57,7 @@ Don't forget to define your apikey!
 			});
 		}
 
-updateMap(){
+	updateMap(){
 	</script>
 
 </body>
