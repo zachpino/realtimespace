@@ -9,8 +9,8 @@ Don't forget to define your apikey!
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 
 	<script>
-		var apikey = "######################";
-		var cities = "4887398,361058,6542286,993800,4140963,256637,3941584,5391959,1857910,1642911,2624652,6547294,1819730,4553433"
+		var apikey = '2166f8d720eac7933e445a19f97cf00a';
+		var cities = "4887398,361058,6542286,993800,4140963,256637,3941584,5391959,1857910,1642911,2624652,6547294,1819730,4553433";
 		var width = 960;
 		var height = 600;
 
@@ -57,7 +57,7 @@ Don't forget to define your apikey!
 			});
 		}
 
-	updateMap(){
+	updateMap()
 	</script>
 
 </body>
