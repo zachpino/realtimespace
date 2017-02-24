@@ -13,3 +13,4 @@ After weeks of discussion, let's finally create a realtime map!
 - [Draw Dots](draw.md)
 - [Update with Button](button.md)
 - [Update at Interval](interval.md)
+- [Cache Control](cache.md)
