@@ -16,7 +16,7 @@ This will run the `updateMap` function every 5 seconds.
 
 The map now automatically asks the API for new data regularly, keeping itself up-to-date. The problem, observable after the first new data flows into the system, is that new geometry is drawn on top of old geometry.
 
-View the [complete code](complete.md) to see the fix which involves a line of code to remove all existing circles *before* drawing them. 
+View the [complete code](complete.md) to see the fix which involves a line of code to remove all existing circles *before* drawing new ones. 
 
 ```
 	svg.selectAll(".dot").remove();
