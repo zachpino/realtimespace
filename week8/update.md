@@ -6,7 +6,7 @@ Now that [new data](enter.md) is smoothly animated into our dataset, we might wa
 Place this code below the `//enter` block.
 
 ```
-//update
+					//update
 					dots
 					.transition()
 					.duration(1000)
@@ -19,5 +19,8 @@ Place this code below the `//enter` block.
 					;
  ```
  
- Over two seconds, this code runs a *compound transition* on our elements. Any pre-existing datapoint grows to twice its original size over one second, and then shrinks back down to normal size over the second second. Add as many transitions as you would like for feedback purposes!
+Over two seconds, this code runs a *compound transition* on our elements. Any pre-existing datapoint grows to twice its original size over one second, and then shrinks back down to normal size over the second second. Add as many transitions as you would like for feedback purposes. 
  
+As before, make changes to the dataset and click the button on the page to see the animations.
+
+Finally, what should happen when datapoints [disappear](exit.md) from the dataset?
