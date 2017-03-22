@@ -50,57 +50,6 @@ d3.json("mock.json", function(error,data) {
 });
 
 
-function drawDots(){
-
-	d3.json("mock.json", function(error,data) {
-
-					//save selection as variable
-					var dots = svg.selectAll(".dots")
-					.data(data);
-
-
-					//enter
-					dots
-					.enter()
-					.append("circle")
-					.attr("cx",function(d){return d.x})
-					.attr("cy",function(d){return d.y})
-					.attr("r", 0)
-					.classed("dots", true)
-					.transition()
-					.duration(5000)
-					.attr("r", function(d){return d.size})
-					.attr("fill",function(d){return d.color})
-					;
-
-					//exit
-					dots
-					.exit()
-					.transition()
-					.duration(3000)
-					.ease(d3.easeBounceOut)
-					.attr("cy", height)
-					.style("fill-opacity", 0)
-					.remove();
-
-					//update
-					dots
-					.transition()
-					.duration(1000)
-					.attr("r", function(d){return d.size*2})
-					.attr("cx",function(d){return d.x})
-					.attr("cy",function(d){return d.y})
-					.transition()
-					.duration(1000)
-					.attr("r", function(d){return d.size})
-					;
-
-				});
-
-
-};      
-
-
 /*
 		//automatically call our function at regular intervals
 		var interval = setInterval(
