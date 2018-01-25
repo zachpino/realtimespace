@@ -12,7 +12,7 @@ To begin our exploration of D3, let's add a second `<script>` tag to our `<body>
 <body>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    
+    <script>   
       //make size variables
       var width = 1000;
       var height =  600;
@@ -24,7 +24,7 @@ To begin our exploration of D3, let's add a second `<script>` tag to our `<body>
       .style("background-color","#cde")
       ;
     
-    <script>
+
     
     
     </script>
