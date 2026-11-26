@@ -43,7 +43,7 @@ D3 uses domains and ranges to map our data to our screen's coordinates.
 </html>
 ```
 
-We justr created 2 scales, one for x and one for y!
+We just created 2 scales, one for x and one for y!
 
 We know that our data fits into -180 to 180 for longitude, and -90 to 90 for latitude. We want our visualization to fit into specific pixels on our website, from 0 to the `width` and `height` variables. 
 
